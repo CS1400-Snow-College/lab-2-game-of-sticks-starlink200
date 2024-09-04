@@ -55,42 +55,67 @@ internal class Program
         string p1 = playerName[0];
         string p2 = playerName[1];
         //try again is the while loop for if there is an invalid answer
-        bool tryAgain = true;
+        bool tryAgainp1 = true;
+        bool tryAgainp2 = true;
         //continueGame is for if the game hasn't ended yet
         bool continueGame = true;
         //stickCount will be a counter for the number of sticks left
         int stickCount = 20;
         while(continueGame){
-            while(tryAgain)
+            tryAgainp1 = true;
+            tryAgainp2 = true;
+            while(tryAgainp1)
             {
                 Console.WriteLine($"{p1} please pick a valid number of sticks to take");
                 string p1Answer = Console.ReadLine();
                 int p1Int = Convert.ToInt16(p1Answer);
-                if(p1Int >= 1 && p1Int <= 3)
+                if(p1Int >= 1 && p1Int <= 3 && p1Int <= stickCount)
                 {
-                    tryAgain = false;
+                    tryAgainp1 = false;
                     stickCount = stickCount - p1Int;
+                    if(stickCount <= 0)
+                    {
+                        tryAgainp2 = false;
+                        Console.WriteLine($"{p2} is the winner!!");
+                    }
                 }
                 else{
-                    tryAgain = true;
+                    tryAgainp1 = true;
                     Console.WriteLine("Invalid answer");
                 }
             }
-            tryAgain = true;
-            while(tryAgain)
+            while(tryAgainp2)
             {
                 Console.WriteLine($"{p2} please pick a valid number of sticks to take");
                 string p2Answer = Console.ReadLine();
                 int p2Int = Convert.ToInt16(p2Answer);
-                if(p2Int >= 1 && p2Int <= 3)
+                if(p2Int >= 1 && p2Int <= 3 && p2Int <= stickCount)
                 {
-                    tryAgain = false;
+                    tryAgainp2 = false;
                     stickCount = stickCount - p2Int;
+                    if(stickCount <= 0)
+                    {
+                        continueGame = false;
+                        Console.WriteLine($"{p1} is the winner!!");
+                    }
                 }
                 else{
-                    tryAgain = true;
+                    tryAgainp2 = true;
                     Console.WriteLine("Invalid answer");
                 }
+            }
+            if(stickCount > 0)
+            {
+                for(int i = 0; i < stickCount; i++){
+                    Console.Write("|");
+                }
+                Console.WriteLine("");
+                Console.WriteLine($"{stickCount} sticks remain");
+                continueGame = true;
+            }
+            else{
+                continueGame = false;
+                Console.WriteLine("Game is over");
             }
         }
     }
