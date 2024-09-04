@@ -33,7 +33,7 @@ internal class Program
     }
     /************************************************************************************************************************
     *playerNames() will take the players name and set it to a variable for it to be called later on
-    *
+    *Stored as a list so that it has a return value to be used
     ************************************************************************************************************************/
     public static List<string> playerNames()
     {
@@ -48,13 +48,15 @@ internal class Program
     }
     /************************************************************************************************************************
     *playGame() this is where majority of the code for the game will be, player one will go first followed by player 2.
-    *
+    *The parameters are met by the function playerNames() which returns a list
     ************************************************************************************************************************/
     public static void playGame(List<string> playerName)
     {
+        //p1 and p2 stand for player 1 and 2 respectively, which is set to the value of the first and second index of the list
         string p1 = playerName[0];
         string p2 = playerName[1];
         //try again is the while loop for if there is an invalid answer
+        //2 seperate booleans to have control over 2 seperate while loops, 1 for each player
         bool tryAgainp1 = true;
         bool tryAgainp2 = true;
         //continueGame is for if the game hasn't ended yet
@@ -62,8 +64,15 @@ internal class Program
         //stickCount will be a counter for the number of sticks left
         int stickCount = 20;
         while(continueGame){
+            Console.Clear();
             tryAgainp1 = true;
             tryAgainp2 = true;
+            for(int i = 0; i < stickCount; i++)
+            {
+                Console.Write("|");
+            }
+            Console.WriteLine("");
+            Console.WriteLine($"{stickCount} sticks remain");
             while(tryAgainp1)
             {
                 Console.WriteLine($"{p1} please pick a valid number of sticks to take");
@@ -83,7 +92,14 @@ internal class Program
                     tryAgainp1 = true;
                     Console.WriteLine("Invalid answer");
                 }
+                Console.Clear();
             }
+            for(int i = 0; i < stickCount; i++)
+            {
+                Console.Write("|");
+            }
+            Console.WriteLine("");
+            Console.WriteLine($"{stickCount} sticks remain");
             while(tryAgainp2)
             {
                 Console.WriteLine($"{p2} please pick a valid number of sticks to take");
@@ -93,6 +109,12 @@ internal class Program
                 {
                     tryAgainp2 = false;
                     stickCount = stickCount - p2Int;
+                    for(int i = 0; i < stickCount; i++)
+                    {
+                        Console.Write("|");
+                    }
+                    Console.WriteLine("");
+                    Console.WriteLine($"{stickCount} sticks remain");
                     if(stickCount <= 0)
                     {
                         continueGame = false;
@@ -103,14 +125,10 @@ internal class Program
                     tryAgainp2 = true;
                     Console.WriteLine("Invalid answer");
                 }
+                Console.Clear();
             }
             if(stickCount > 0)
             {
-                for(int i = 0; i < stickCount; i++){
-                    Console.Write("|");
-                }
-                Console.WriteLine("");
-                Console.WriteLine($"{stickCount} sticks remain");
                 continueGame = true;
             }
             else{
