@@ -69,7 +69,6 @@ internal class Program
             tryAgainp2 = true;
             while(tryAgainp1)
             {
-                Console.Clear();
                 for(int i = 0; i < stickCount; i++)
                 {
                     Console.Write("|");
@@ -83,6 +82,7 @@ internal class Program
                 {
                     tryAgainp1 = false;
                     stickCount = stickCount - p1Int;
+                    Console.Clear();
                     if(stickCount <= 0)
                     {
                         tryAgainp2 = false;
@@ -90,13 +90,13 @@ internal class Program
                     }
                 }
                 else{
+                    Console.Clear();
                     tryAgainp1 = true;
                     Console.WriteLine("Invalid answer");
                 }
             }
             while(tryAgainp2)
             {
-                Console.Clear();
                 for(int i = 0; i < stickCount; i++)
                 {
                     Console.Write("|");
@@ -110,6 +110,7 @@ internal class Program
                 {
                     tryAgainp2 = false;
                     stickCount = stickCount - p2Int;
+                    Console.Clear();
                     for(int i = 0; i < stickCount; i++)
                     {
                         Console.Write("|");
@@ -123,6 +124,7 @@ internal class Program
                     }
                 }
                 else{
+                    Console.Clear();
                     tryAgainp2 = true;
                     Console.WriteLine("Invalid answer");
                 }
