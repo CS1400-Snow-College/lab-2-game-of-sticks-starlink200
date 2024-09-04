@@ -67,14 +67,15 @@ internal class Program
             Console.Clear();
             tryAgainp1 = true;
             tryAgainp2 = true;
-            for(int i = 0; i < stickCount; i++)
-            {
-                Console.Write("|");
-            }
-            Console.WriteLine("");
-            Console.WriteLine($"{stickCount} sticks remain");
             while(tryAgainp1)
             {
+                Console.Clear();
+                for(int i = 0; i < stickCount; i++)
+                {
+                    Console.Write("|");
+                }
+                Console.WriteLine("");
+                Console.WriteLine($"{stickCount} sticks remain");
                 Console.WriteLine($"{p1} please pick a valid number of sticks to take");
                 string p1Answer = Console.ReadLine();
                 int p1Int = Convert.ToInt16(p1Answer);
@@ -92,16 +93,16 @@ internal class Program
                     tryAgainp1 = true;
                     Console.WriteLine("Invalid answer");
                 }
-                Console.Clear();
             }
-            for(int i = 0; i < stickCount; i++)
-            {
-                Console.Write("|");
-            }
-            Console.WriteLine("");
-            Console.WriteLine($"{stickCount} sticks remain");
             while(tryAgainp2)
             {
+                Console.Clear();
+                for(int i = 0; i < stickCount; i++)
+                {
+                    Console.Write("|");
+                }
+                Console.WriteLine("");
+                Console.WriteLine($"{stickCount} sticks remain");
                 Console.WriteLine($"{p2} please pick a valid number of sticks to take");
                 string p2Answer = Console.ReadLine();
                 int p2Int = Convert.ToInt16(p2Answer);
@@ -125,7 +126,6 @@ internal class Program
                     tryAgainp2 = true;
                     Console.WriteLine("Invalid answer");
                 }
-                Console.Clear();
             }
             if(stickCount > 0)
             {
