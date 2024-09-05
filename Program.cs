@@ -16,10 +16,25 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        bool playAgain = true;
         Console.Clear();
-        Console.WriteLine("Hello Players! This is the game sticks you will be allowed to play!");
+        while(playAgain)
+        {
         rules();
         playGame(playerNames());
+        Console.WriteLine("Would you like to play again?");
+        Console.WriteLine("Type 1 for yes");
+        Console.WriteLine("Type 2 for no. Anything else will default to no");
+        string playMore = Console.ReadLine();
+        int play = Convert.ToInt16(playMore);
+        if(play == 1)
+        {
+            playAgain = true;
+        }
+        else{
+            playAgain = false;
+        }
+        }
     }
     /************************************************************************************************************************
     *rules() will describe the rules to the player
