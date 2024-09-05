@@ -1,4 +1,10 @@
-﻿/*******************************************************************************************************
+﻿/******************************************************************
+Caleb Roskelley
+Lab 2: Game of Sticks
+Date: 9/4/2024
+*******************************************************************/
+
+/*******************************************************************************************************
 Explain the rules of the game of sticks: players will take turns choosing at least 1 and no more than 3*
 of the remaining sticks until the sticks are gone.  The player that takes the last stick loses.        *
 Set the number of sticks left to 20.                                                                   *
