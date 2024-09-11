@@ -1,0 +1,15 @@
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\bin\Debug\net8.0\lab-2-game-of-sticks-starlink200.exe
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\bin\Debug\net8.0\lab-2-game-of-sticks-starlink200.deps.json
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\bin\Debug\net8.0\lab-2-game-of-sticks-starlink200.runtimeconfig.json
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\bin\Debug\net8.0\lab-2-game-of-sticks-starlink200.dll
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\bin\Debug\net8.0\lab-2-game-of-sticks-starlink200.pdb
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\obj\Debug\net8.0\lab-2-game-of-sticks-starlink200.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\obj\Debug\net8.0\lab-2-game-of-sticks-starlink200.AssemblyInfoInputs.cache
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\obj\Debug\net8.0\lab-2-game-of-sticks-starlink200.AssemblyInfo.cs
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\obj\Debug\net8.0\lab-2-game-of-sticks-starlink200.csproj.CoreCompileInputs.cache
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\obj\Debug\net8.0\lab-2-game-of-sticks-starlink200.sourcelink.json
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\obj\Debug\net8.0\lab-2-game-of-sticks-starlink200.dll
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\obj\Debug\net8.0\refint\lab-2-game-of-sticks-starlink200.dll
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\obj\Debug\net8.0\lab-2-game-of-sticks-starlink200.pdb
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\obj\Debug\net8.0\lab-2-game-of-sticks-starlink200.genruntimeconfig.cache
+C:\Users\caleb\my-code-dir\lab-2-game-of-sticks-starlink200\obj\Debug\net8.0\ref\lab-2-game-of-sticks-starlink200.dll

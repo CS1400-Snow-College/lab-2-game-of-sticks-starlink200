@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lab-2-game-of-sticks-starlink200")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02a8f46754690fd479456b158c92d1481b5e2f75")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fd9271d4fea6d6c30c6c6d67cf36c8ff292e698")]
 [assembly: System.Reflection.AssemblyProductAttribute("lab-2-game-of-sticks-starlink200")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lab-2-game-of-sticks-starlink200")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
